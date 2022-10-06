@@ -1,25 +1,23 @@
 #include <stdio.h>
-#include <conio.h>
-#include<string.h>
+#include <stdlib.h>
+
+/*Calculation of simple interest/*
+/* Author gekay Date: 25/05/2004 */
 
 main()
 {
-    char Str[10];
-    int len,i;
+    int p,n;
+    float r,si;
 
-    printf("\n enter a string: ");
-    gets(Str);
+    p = 1000;
+    n = 3;
+    r = 8.5;
 
-    len = strlen(Str);
+    /*formula for simple interest*/
+    si = p*n*r/100;
 
-    printf("\n reverse string: ");
-    for(i= len-1; i>=0; i--)
-    {
-        printf("%c",Str[i]);
-    }
-    getch();
+    printf("%f",si);
+
+
+
 }
-
-
-
-
